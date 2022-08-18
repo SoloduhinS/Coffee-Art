@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Art Landing Page Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section>
+        <div class="background"></div>
+        <header>
+            <a href="#"><img src="./img/logo.png" alt="Logo"class="logo">
+            </a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What`s New</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="tetx__box">
+                <h2>Here you`ll buy not only <span>Coffee</span><br>Also plenty of <span>Soft Drinks</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Delectus voluptatem officia similique culpa quas, rem unde? 
+                    Repudiandae, non ullam dolorem magni sequi sunt repellendus odio enim, 
+                    molestias quasi tempore, qui esse officiis illo quia excepturi explicabo alias iure. 
+                    Temporibus corporis eaque distinctio enim est perferendis laboriosam sed voluptas veniam quisquam.</p>
+                <a href="#"><button>Learn More...</button> </a>
+            </div>
+            <div class="img__box">
+                <img src="./img/latte.png" class="coffee" alt="Latte">
+            </div>
+        </div>
+        <!-- <ul class="drinks">
+            <li><img src="./latte.png" onclick="imgChange('latte.png');colorChange('bisque')"></li>
+            <li><img src="./ice_tea.png" onclick="imgChange('ice_tea.png');colorChange('salmon')"></li>
+            <li><img src="./mojito.png" onclick="imgChange('mojito.png');colorChange('lightgreen')"></li>
+        </ul> -->
+        <ul class="drinks">
+            <li><img data-src="latte.png" data-color="bisque" src="./latte.png" class="image-button" alt="Latte"></li>
+            <li><img data-src="ice_tea.png" data-color="salmon" src="./ice_tea.png" class="image-button" alt="Ice Tea"></li>
+            <li><img data-src="mojito.png" data-color="lightgreen" src="./mojito.png" class="image-button" alt="Mojito"></li>
+        </ul>
+        <ul class="contacts">
+            <li><a href="#"><img src="./icon/fb.png" alt="facebook"></a></li>
+            <li><a href="#"><img src="./icon/tw.png" alt="twitter"></a></li>
+            <li><a href="#"><img src="./icon/insta.png" alt="instagram"></a></li>
+        </ul>
+    </section>
+
+    <!-- <script type="text/javascript">
+        function imgChange(item) {
+            document.querySelector('.coffee').src = item;
+        }
+
+        function colorChange(color) {
+            const backGround = document.querySelector('.background');
+            backGround.style.background = color;
+        }
+    </script> -->
+    <script src="./main.js"></script>
+</body>
+</html>

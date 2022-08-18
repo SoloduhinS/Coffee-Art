@@ -1,0 +1,220 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* html {
+    background-image: url(./img/bg1.jpg);
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100%;
+  } */
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    position: relative;
+    max-width: 150px;
+    border-radius: 75px;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+header ul li {
+    list-style: none;
+    position: relative;
+    padding: 4px 0;
+    margin: 0 10px;
+}
+
+header ul li a {
+    display: inline-block;
+    font-weight: 400;
+    margin-left: 50px;
+    text-decoration: none;
+    font-size: larger;
+    font-weight: 500;
+    color: sienna;
+}
+
+header ul li a::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    width: 0;
+    left: 25px;
+    height: 2px;
+    background-color: sienna;
+    transition: 0.3s all;
+    color: sienna;
+}
+
+header ul li a:hover:after {
+    width: 100%;
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content .tetx__box {
+    position: relative;
+    width: 60%;
+}
+
+.content .tetx__box h2 {
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight: 500;
+    color: sienna;
+}
+
+.content .tetx__box p {
+    color: sienna;
+    font-size: 20px;
+}
+
+
+.content .tetx__box h2 span {
+    font-size: 1.2em;
+    font-weight: 900;
+    color:sandybrown;
+}
+
+.content .tetx__box a {
+    /* display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background-color: sandybrown;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #fff; */
+}
+
+.content .tetx__box a button {
+    box-shadow: none;
+    border: 2px solid sandybrown;
+    background-color: sandybrown;
+    color: sienna;
+    padding: 10px 40px;
+    border-radius: 20px;
+    margin-top: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s all;
+}
+
+.content .tetx__box a button:hover {
+    background-color: white;
+    color: sandybrown;
+    border: 2px solid sienna;
+}
+
+.content .tetx__box a:hover {
+    background-color: transparent;
+    border-radius: 40px;
+    border-color: sandybrown;
+    color: sandybrown;
+}
+
+.content .img__box {
+    width: 500px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 5%;
+    margin-top: 50px;
+}
+
+.drinks {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    display: flex;
+    right: 20%;
+}
+
+.drinks li {
+    list-style: none;
+    display: inline-block;
+    margin: 0px 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.drinks li:hover {
+    transform: translateY(-15px);
+}
+
+.drinks li img {
+    max-width: 60px;
+    margin: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contacts {
+    position: absolute;
+    top: 50%;
+    right: 60px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contacts li {
+    list-style: none;
+}
+
+.contacts li a {
+    display: inline-block;
+    margin: 10px 0;
+    transform: scale(0.6);
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:bisque;
+    clip-path: circle(800px at right 950px);
+    color:;
+}
